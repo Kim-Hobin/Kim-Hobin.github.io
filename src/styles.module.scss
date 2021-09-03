@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+html {
+  width: 1200px;
+}
+h2 {
+  color: blue;
+}
+h3 {
+  color: red;
+}
+h5 {
+  color: green;
+}
+.width_left {
+  width: 30%;
+}
+.width_right {
+  width: 70%;
+}
+header {
+  div {
+    overflow: hidden;
+    width: 100%;
+    .left {
+      float: left;
+      width: 20%;
+    }
+    .right {
+      float: left;
+      width: 80%;
+      height: 200px;
+      div {
+        span {
+          width: 10%;
+          height: 30px;
+          float: left;
+        }
+        p {
+          float: left;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+.basic {
+  overflow: hidden;
+  width: 100%;
+  div {
+    width: 100%;
+    display: block;
+    float: left;
+    height: 70px;
+    span {
+      float: left;
+    }
+  }
+}
+
+.Part {
+  overflow: hidden;
+  width: 100%;
+  div {
+    width: 100%;
+    float: left;
+    span {
+      float: left;
+      display: block;
+    }
+  }
+}
+
+.Skill {
+  overflow: hidden;
+  width: 100%;
+  div {
+    width: 100%;
+    float: left;
+    span {
+      float: left;
+      width: 33%;
+    }
+  }
+}

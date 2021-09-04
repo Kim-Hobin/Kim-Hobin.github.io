@@ -1,29 +1,27 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styles from '../styles.module.scss';
 
 class Profile extends Component {
     render() {
-        var lists = [];
         var data = this.props.data;
-        var i = 0;
-        while(i < data.length){
-            lists.push(<div><span>{data[i].title}</span><p>{data[i].desc}</p></div>);
-            i = i + 1;
-        }
+        const tags = data.contents.map((tag) => (
+            <div><span>{tag.title}</span><p>{tag.desc}</p></div>
+        ))
+
         return (
             <header>
-                <h2>Profile</h2>
-                <div> 
-                    <div className={styles.left}>
-                    <img></img>
-                    </div>
-                    <div className={styles.right}>
-                        {lists}
-                    </div>
+                <div>
+                    <img src='profile.jpg'></img>
+                    <h1>{data.name}</h1>
+                    <h3>{data.intro}</h3>
+                    <a>T1</a>
+                    <a>T2</a>
+                    <a>T3</a>
+                    <a>T4</a>
                 </div>
-            </header>
+            </header >
         )
     }
-  }
+}
 
-  export default Profile;
+export default Profile;

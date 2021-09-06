@@ -11,6 +11,15 @@
     size: $size;
   }
 }
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -50,6 +59,12 @@ h5 {
 }
 .width_right {
   width: 70%;
+  .ImageView {
+    width: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 header {
   div {
@@ -63,7 +78,6 @@ header {
       box-shadow: 0 0 5px 5px gray;
     }
     a {
-      font-size: 2rem;
       margin-left: 0.5rem;
       margin-right: 0.5rem;
     }
@@ -111,3 +125,115 @@ header {
     }
   }
 }
+
+.contact {
+  padding: 5px;
+  height: 80px;
+}
+
+.SpinButton {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  text-align: center; // 수평정렬
+  color: white;
+  i {
+    font-size: 3.6rem; // 폰트어썸(마크를 글자취급)
+    line-height: 4rem; // 수직정렬(글자 높이)
+    transition: 0.5s;
+  }
+  &::before {
+    box-sizing: inherit;
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    color: black;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 20px #777;
+    transition: 0.5s;
+  }
+  &:hover {
+    cursor: pointer;
+
+    &::before {
+      border: 2px solid white;
+      border-top: 2px solid black;
+      box-shadow: inset 0 0 0 2px #777;
+      animation: {
+        name: spin;
+        duration: 1s;
+        iteration-count: infinite;
+        timing-function: linear;
+      }
+    }
+    i {
+      color: black;
+    }
+  }
+}
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 95%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    header {
+      border: 1px solid black;
+      height: 10%;
+    }
+    div {
+      border: 1px solid black;
+      height: 75%;
+      .Arrow {
+        float: left;
+        width: 5%;
+        height: 100%;
+      }
+      .Gallary {
+        float: left;
+        width: 90%;
+        height: 100%;
+      }
+    }
+    footer {
+
+      border: 1px solid black;
+      height: 15%;
+      .CurrentImage {
+        width: 100px;
+        border: 2px solid blue;
+      }
+    }
+  }
+}
+
+
+
+
+// before
+
+// position (static, fixed, relative, absolute)
+
+// relative (내가 원래 있어야할 위치를 기준으로 움직여)
+// top:100px -> 내가 원래 있어야할곳에ㅐ서 위로 100
+// left:100px -> 
+
+// absolute (static이 아닌 상위 객체의 위치값을 가지고 거기에 위치)
+// top:100px 부모 객체에서 좌표값으로 y값이 100px로 가겠다.
+// left:100px 부모 객체에서 x좌표값을 100px로 가겠다.
+

@@ -72,8 +72,13 @@ export const resume = {
                 left_add: "https:/asdadasd.com",
                 right_title: "깃허브 이력서",
                 right_subtitle: "",
-                right: [
+                content: [
                     "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다싶은 이력서페이지를 작성하게 됨",
+                ],
+                images: [
+                    'profile.jpg',
+                    'logo512.png',
+                    'test.png'
                 ]
             },
             {
@@ -82,9 +87,14 @@ export const resume = {
                 left_add: "https:/asdadasd.com",
                 right_title: "하우스 메뉴얼",
                 right_subtitle: "숙박 예약 페이지 솔루션 프로젝트",
-                right: [
-                    "html, css, javascript로 클라이언트 구현, Django + MongoDB 서버 구현",
+                content: [
+                    "html, css, javascript로 클라이언트, Django + MongoDB 서버 구현",
                     "기본적인 CRUD 및 반응형 웹앱으로 구현",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'profile.jpg'
                 ]
             },
             {
@@ -93,7 +103,7 @@ export const resume = {
                 left_add: "https:/asdadasd.com",
                 right_title: "광학음악인식기반 자동편곡시스템",
                 right_subtitle: "캡스톤디자인1, 2 교과목 연계 졸업프로젝트",
-                right: [
+                content: [
                     "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로\
                     출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함",
                     "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음",
@@ -104,6 +114,11 @@ export const resume = {
                     "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함",
                     "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨",
                     "느낀점",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'profile.jpg'
                 ]
             },
             {
@@ -112,10 +127,15 @@ export const resume = {
                 left_add: "https:/asdadasd.com",
                 right_title: "PC 견적관리 웹사이트",
                 right_subtitle: "데이터베이스설계 교과목 연계 프로젝트",
-                right: [
+                content: [
                     "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트",
                     "로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공",
                     "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'profile.jpg'
                 ]
             },
             {
@@ -124,11 +144,16 @@ export const resume = {
                 left_add: "",
                 right_title: "도서 관리시스템",
                 right_subtitle: "데이터베이스설계 교과목 연계 프로젝트",
-                right: [
+                content: [
                     "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현",
                     "로그인/로그아웃, 회원가입, 마이페이지(신용카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공",
                     "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
                     "MySQL로 객체의 속성이나 관계에 대해 직접 설계",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'profile.jpg'
                 ]
             },
             {
@@ -137,13 +162,18 @@ export const resume = {
                 left_add: "https:/asdadasd.com",
                 right_title: "플리마켓 통합관리시스템",
                 right_subtitle: "소프트웨어분석설계과목 교과목 연계 프로젝트",
-                right: [
+                content: [
                     "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, \
                     다양한 문서를 작성 해본 프로젝트",
                     "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 \
                     하는 플리마켓 통합 관리 시스템",
                     "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성",
                     "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'profile.jpg'
                 ]
             },
             {
@@ -152,11 +182,16 @@ export const resume = {
                 left_add: "",
                 right_title: "TAPC2",
                 right_subtitle: "소프트웨어개발실습4 교과목 연계 프로젝트",
-                right: [
+                content: [
                     "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발",
                     "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현",
                     "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현",
                     "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'profile.jpg'
                 ]
             },
             {
@@ -165,9 +200,15 @@ export const resume = {
                 left_add: "",
                 right_title: "배드민턴 쇼핑몰",
                 right_subtitle: "소프트웨어개발실습2 교과목 연계 프로젝트",
-                right: [
+                content: [
                     "배드민턴 관련 쇼핑몰 사이트",
                     "html + css + javascript을 기반으로 서버가 없는 정적 페이지",
+                ],
+                images: [
+                    'logo512.png',
+                    'test.png',
+                    'test2.png',
+                    'profile.jpg'
                 ]
             },
         ],
@@ -220,7 +261,7 @@ export const resume = {
             },
             {
                 left_subtitle: "2020.06.08",
-                right_title: "2020년도 동서 AI·SW 아이디어 경진대회",
+                right_title: "2020년도 동서 AI·SW 아이디어 경진대회 - 장려상",
                 right_subtitle: "광학 음악 인식을 이용한 자동 편곡 시스템",
                 right: [],
             },

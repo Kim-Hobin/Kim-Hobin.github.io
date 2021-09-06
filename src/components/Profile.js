@@ -14,10 +14,20 @@ class Profile extends Component {
                     <img src='profile.jpg'></img>
                     <h1>{data.name}</h1>
                     <h3>{data.intro}</h3>
-                    <a>T1</a>
-                    <a>T2</a>
-                    <a>T3</a>
-                    <a>T4</a>
+                    <div className={styles.contact}>
+                        <a className={styles.SpinButton}>
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a className={styles.SpinButton}>
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a className={styles.SpinButton}>
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a className={styles.SpinButton}>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
             </header >
         )

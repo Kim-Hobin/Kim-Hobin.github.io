@@ -18,7 +18,7 @@ class Modal extends Component {
         const image = this.props.images[this.state.index]; // Gallary Image
         const cnt = this.props.images.length; // 이미지 개수        
         const images = this.props.images.map((image, index) => { // 썸네일 이미지
-            if (index === this.state.index) { // 썸네일 이미지 == Gallary
+            if (index === this.state.index) { // 썸네일 이미지 : Gallary
                 var ClassName = styles.CurrentImage;
             }
             return (

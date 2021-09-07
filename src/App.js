@@ -21,8 +21,8 @@ class App extends Component {
         <Skill data={this.state.skills}></Skill>
         <Project data={this.state.projects}></Project>
         <Basic data={this.state.educations}></Basic>
-        <Basic data={this.state.awards}></Basic>
         <Basic data={this.state.reserchs}></Basic>
+        <Basic data={this.state.awards}></Basic>
         <Basic data={this.state.certificates}></Basic>
         <Footer></Footer>
         {/* <Modal></Modal> */}

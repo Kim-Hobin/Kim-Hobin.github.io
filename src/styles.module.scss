@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+    
+@mixin font($color, $style, $weight, $size) {
+  color: $color;
+  font: {
+    display: swap;
+    family: 'IBM Plex Sans Arabic', 'IBM Plex Sans KR', sans-serif;
+    style: $style;
+    weight: $weight;
+    size: $size;
+  }
+}
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  line-height: 2;
+}
+html {
+  width: 1200px;
+  margin: 60px auto;
+  font-size: 10px;
+}
+h1{
+  margin-top: 2rem;
+  line-height: 0.8;
+  @include font(black, normal, 400, 4rem);
+}
+h2 {
+  margin-top: 30px;
+  margin-left: 10px;
+  @include font(#444, normal, 400, 3rem);
+}
+h3 {
+  line-height: normal;
+  @include font(#666, normal, 300, 3rem);
+}
+h5 {
+  @include font(black, normal, 300, 2rem);
+}
+.border_top{
+  width:170px;
+  border-top: 2px solid black;
+}
+.border_bot{
+  border-top: 1px solid gray;
+}
+.width_left {
+  width: 30%;
+}
+.width_right {
+  width: 70%;
+  .ImageView {
+    width: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+header {
+  div {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    img {
+      margin-top: 10px;
+      border-radius: 50%;
+      height: 30rem;
+      box-shadow: 0 0 5px 5px gray;
+    }
+    a {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.Wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+  .width_left {
+    width: 30%;
+    float:left;
+    p {
+      @include font(gray, italic, 200, 1.5rem);
+      margin-top :-1rem;
+    }
+  }
+  .width_right {
+    width: 70%;
+    float:left;
+    h5 {
+      text-align: center;
+    }
+    li {
+      @include font(black, normal, 200, 1.5rem);
+    }
+    p {
+      @include font(black, italic, 200, 1.5rem);
+      text-align: center;
+      margin-top: -1rem;
+    }
+  }
+}
+.Skill {
+  overflow: hidden;
+  width: 100%;
+  .Category {
+    width: 33.3333%;
+    float: left;
+    div {
+      width: 100%;
+      span {
+        display: inline-block;
+        width: 33.33333%;
+      }
+    }
+  }
+}
+
+.contact {
+  padding: 5px;
+  height: 80px;
+}
+
+.SpinButton {
+  display: inline-block; // inline 엘리먼트 사용 시 width, height 무시 -> 컨텐츠 공간만큼, marign, padding 상하 반영 x
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center; // 수평정렬
+  color: white;
+  i {
+    font-size: 2.5rem; // 폰트어썸(마크를 글자취급)
+    line-height: 3.5rem; // 수직정렬(글자 높이)
+    transition: 0.5s;
+  }
+  &::before {
+    box-sizing: inherit;
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    color: black;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 20px #777;
+    transition: 0.5s;
+  }
+  &:hover {
+    cursor: pointer;
+
+    &::before {
+      border: 2px solid white;
+      border-top: 2px solid black;
+      box-shadow: inset 0 0 0 2px black;
+      animation: {
+        name: spin;
+        duration: 1s;
+        iteration-count: infinite;
+        timing-function: linear;
+      }
+    }
+    i {
+      color: black;
+    }
+  }
+}
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 95%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    header {
+      border: 1px solid black;
+      height: 10%;
+      text-align:center;
+    }
+    div {
+      border: 1px solid black;
+      height: 75%;
+      .Arrow {
+        float: left;
+        width: 5%;
+        height: 100%;
+        font-size: 2.8rem;
+        text-align: center;
+        padding: 300px 0
+      }
+      .Gallary {
+        float: left;
+        width: 90%;
+        height: 100%;
+      }
+      img {
+        display: block; margin: 0px auto;
+      }
+    }
+    footer {
+      border: 1px solid black;
+      height: 15%;
+      .CurrentImage {
+        width: 100px;
+        border: 2px solid blue;
+      }
+    }
+  }
+}
+
+// before
+
+// position (static, fixed, relative, absolute)
+
+// relative (내가 원래 있어야할 위치를 기준으로 움직여)
+// top:100px -> 내가 원래 있어야할곳에ㅐ서 위로 100
+// left:100px -> 
+
+// absolute (static이 아닌 상위 객체의 위치값을 가지고 거기에 위치)
+// top:100px 부모 객체에서 좌표값으로 y값이 100px로 가겠다.
+// left:100px 부모 객체에서 x좌표값을 100px로 가겠다.
+

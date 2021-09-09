@@ -8,7 +8,7 @@ class Skill extends Component {
         const tags = data.contents.map((tag) => (
             <div className={styles.Category}>
                 <h5>{tag.title}</h5>
-                <Content content={tag.kind}></Content>
+                <Content content={tag.content}></Content>
             </div>
         ))
         return (

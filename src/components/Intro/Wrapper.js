@@ -9,7 +9,7 @@ class Content extends Component {
                 <h2>{data.subject}</h2>
                 <div className={styles.border_top}></div>
                 <div className={styles.border_bot}></div>
-                {data.content}
+                <p>{data.content}</p>
             </section>
         )
     }

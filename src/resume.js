@@ -1,64 +1,42 @@
+//저의 학부 시절의 큰 줄기들을 적어볼까합니다. 저학년 때는 이론 위주의 수업을 들으며 제대로 된 개발 경험이 없었던 저는 DB 교과목을 통해 교수님께서\
+//어떤 스택을 사용하던 자유이니 DB 설계부터 교수님의 요구사항까지 시스템을 직접 구현까지 해오라고 하셨을 때 앞이 캄캄했습니다.\
+//친구들과 밤을 새워가며 고군분투했지만, 결국 PHP와 MySQL를 통해 구현을 했고 처음으로 개발을 통한 성취감을 느꼈습니다.\
+//-----------------\ 
 export const resume = {
     profiles: {
         subject: "Profiles", name: "김호빈", intro: "Web Frontend Enginier",
         contents: [
-            { id: 2, title: "전화번호", desc: "010 - 5534 - 0573" },
-            { id: 3, title: "email", desc: "isb0573@naver.com" },
-            { id: 4, title: "git", desc: "asdasddasdd.com" },
-            { id: 5, title: "blog", desc: "asdfsdfasf.com" },
+            { title: "전화번호", link: "010 - 5534 - 0573", style: "fas fa-phone-volume" },
+            { title: "email", link: "isb0573@naver.com", style: "fas fa-at" },
+            { title: "git", link: "https://github.com/Kim-Hobin", style: "fab fa-github" },
+            { title: "blog", link: "https://isb0573.tistory.com/", style: "fas fa-blog" },
         ],
     },
     intro: {
         subject: "About Me",
-        content: "하위",
+        content: "안녕하세요 웹 개발을 꿈꾸는 학생입니다. 현재는 스스로 문제해결능력과 구현력이 많이 부족하다고 느껴 백준이라는 알고리즘 문제 푸는 사이트를 통해 알고리즘과 리엑트 공부를 하고 있습니다.\
+        이후에는 졸업작품과 백준 풀이법 등에 대한 블로그 활동과 스프링 공부에 대해 계획중입니다.",
     },
+
     skills: {
         subject: "Skills",
         contents: [
             {
                 title: "Front-and",
-                kind: [
-                    {
-                        id: 1,
-                        content: "html",
-                    },
-                    {
-                        id: 2,
-                        content: "css",
-                    },
-                    {
-                        id: 3,
-                        content: "javascript",
-                    },
+                content: [
+                    "HTML/CSS", "javaScrpit", "React"
                 ],
             },
             {
                 title: "back-end",
-                kind: [
-                    {
-                        content: "c",
-                    },
-                    {
-                        id: 2,
-                        content: "c++",
-                    },
-                    {
-                        id: 2,
-                        content: "c++",
-                    },
+                content: [
+                    "C", "C++", "PHP", "Android", "Java", "Node.js"
                 ],
             },
             {
-                title: "devOps",
-                kind: [
-                    {
-                        id: 1,
-                        content: "c",
-                    },
-                    {
-                        id: 2,
-                        content: "c++",
-                    },
+                title: "DataBase",
+                content: [
+                    "mySQL", "MongoDB",
                 ],
             },
         ],
@@ -70,13 +48,14 @@ export const resume = {
                 left_title: "",
                 left_subtitle: "2021.9 ~ 2021.9",
                 left_add: "https:/asdadasd.com",
-                right_title: "깃허브 이력서",
+                right_title: "기술 이력서",
                 right_subtitle: "",
                 content: [
-                    "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다싶은 이력서페이지를 작성하게 됨",
+                    "웹 프론트엔드 프레임워크인 리엑트를 공부하며 실습으로 만든 이력서",
+                    "전체를 Wrapper, Left, Right 3부분으로 컴포넌트를 나누어 재사용할 수 있도록 구현",
+                    "동적인 프로필 버튼과 이미지 모달 구현",
                 ],
                 images: [
-                    'profile.jpg',
                     'logo512.png',
                     'test.png'
                 ]
@@ -88,13 +67,13 @@ export const resume = {
                 right_title: "하우스 메뉴얼",
                 right_subtitle: "숙박 예약 페이지 솔루션 프로젝트",
                 content: [
+                    "고객이 숙박을 예약하면 URl을 통해 고객이 예약정보를 알 수 있도록 함",
                     "html, css, javascript로 클라이언트, Django + MongoDB 서버 구현",
                     "기본적인 CRUD 및 반응형 웹앱으로 구현",
                 ],
                 images: [
                     'logo512.png',
                     'test.png',
-                    'profile.jpg'
                 ]
             },
             {
@@ -113,12 +92,11 @@ export const resume = {
                     "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현",
                     "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함",
                     "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨",
-                    "느낀점",
+                    "느낀점 ---- ",
                 ],
                 images: [
                     'logo512.png',
                     'test.png',
-                    'profile.jpg'
                 ]
             },
             {
@@ -135,7 +113,6 @@ export const resume = {
                 images: [
                     'logo512.png',
                     'test.png',
-                    'profile.jpg'
                 ]
             },
             {
@@ -153,7 +130,6 @@ export const resume = {
                 images: [
                     'logo512.png',
                     'test.png',
-                    'profile.jpg'
                 ]
             },
             {
@@ -173,7 +149,6 @@ export const resume = {
                 images: [
                     'logo512.png',
                     'test.png',
-                    'profile.jpg'
                 ]
             },
             {
@@ -191,7 +166,6 @@ export const resume = {
                 images: [
                     'logo512.png',
                     'test.png',
-                    'profile.jpg'
                 ]
             },
             {
@@ -205,10 +179,9 @@ export const resume = {
                     "html + css + javascript을 기반으로 서버가 없는 정적 페이지",
                 ],
                 images: [
-                    'logo512.png',
                     'test.png',
                     'test2.png',
-                    'profile.jpg'
+                    'test3.png',
                 ]
             },
         ],

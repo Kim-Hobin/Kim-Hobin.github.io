@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
-
+    
 @mixin font($color, $style, $weight, $size) {
   color: $color;
   font: {
@@ -134,15 +134,15 @@ header {
 }
 
 .SpinButton {
-  display: inline-block;
+  display: inline-block; // inline 엘리먼트 사용 시 width, height 무시 -> 컨텐츠 공간만큼, marign, padding 상하 반영 x
   position: relative;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   text-align: center; // 수평정렬
   color: white;
   i {
-    font-size: 3.6rem; // 폰트어썸(마크를 글자취급)
-    line-height: 4rem; // 수직정렬(글자 높이)
+    font-size: 2.5rem; // 폰트어썸(마크를 글자취급)
+    line-height: 3.5rem; // 수직정렬(글자 높이)
     transition: 0.5s;
   }
   &::before {
@@ -165,7 +165,7 @@ header {
     &::before {
       border: 2px solid white;
       border-top: 2px solid black;
-      box-shadow: inset 0 0 0 2px #777;
+      box-shadow: inset 0 0 0 2px black;
       animation: {
         name: spin;
         duration: 1s;
@@ -229,9 +229,6 @@ header {
     }
   }
 }
-
-
-
 
 // before
 

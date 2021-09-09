@@ -5,7 +5,9 @@ class Profile extends Component {
     render() {
         var data = this.props.data;
         const tags = data.contents.map((tag) => (
-            <div><span>{tag.title}</span><p>{tag.desc}</p></div>
+            <a className={styles.SpinButton} href={tag.link}>
+                <i class={tag.style}></i>
+            </a>
         ))
 
         return (
@@ -15,18 +17,7 @@ class Profile extends Component {
                     <h1>{data.name}</h1>
                     <h3>{data.intro}</h3>
                     <div className={styles.contact}>
-                        <a className={styles.SpinButton}>
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a className={styles.SpinButton}>
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a className={styles.SpinButton}>
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a className={styles.SpinButton}>
-                            <i class="fab fa-github"></i>
-                        </a>
+                        {tags}
                     </div>
                 </div>
             </header >

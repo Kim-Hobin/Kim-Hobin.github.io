@@ -310,25 +310,25 @@ export const resume = {
         subject: "certificate",
         contents: [
             {
-                left_subtitle: "2021.11.26",
+                left_subtitle: "-",
                 right_title: "정보처리기사",
                 right_subtitle: "한국산업인력공단",
                 right: [],
             },
             {
-                left_subtitle: "2021.11.09",
+                left_subtitle: "-",
                 right_title: "리눅스 마스터 2급",
                 right_subtitle: "대한상공회의소 자격팡가사업단",
                 right: [],
             },
             {
-                left_subtitle: "2021.11.05",
+                left_subtitle: "-",
                 right_title: "워드프로세스 1급",
                 right_subtitle: "대한상공회의소 자격팡가사업단",
                 right: [],
             },
             {
-                left_subtitle: "2021.10.09",
+                left_subtitle: "-",
                 right_title: "컴퓨터활용능력 1급",
                 right_subtitle: "대한상공회의소 자격팡가사업단",
                 right: [],

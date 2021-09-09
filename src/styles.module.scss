@@ -35,13 +35,6 @@ h1{
   line-height: 0.8;
   @include font(black, normal, 400, 4rem);
 }
-.border_top{
-  width:170px;
-  border-top: 2px solid black;
-}
-.border_bot{
-  border-top: 1px solid gray;
-}
 h2 {
   margin-top: 30px;
   margin-left: 10px;
@@ -53,6 +46,13 @@ h3 {
 }
 h5 {
   @include font(black, normal, 300, 2rem);
+}
+.border_top{
+  width:170px;
+  border-top: 2px solid black;
+}
+.border_bot{
+  border-top: 1px solid gray;
 }
 .width_left {
   width: 30%;
@@ -93,6 +93,7 @@ header {
     float:left;
     p {
       @include font(gray, italic, 200, 1.5rem);
+      margin-top :-1rem;
     }
   }
   .width_right {
@@ -105,8 +106,9 @@ header {
       @include font(black, normal, 200, 1.5rem);
     }
     p {
-      text-align: center;
       @include font(black, italic, 200, 1.5rem);
+      text-align: center;
+      margin-top: -1rem;
     }
   }
 }
@@ -195,6 +197,7 @@ header {
     header {
       border: 1px solid black;
       height: 10%;
+      text-align:center;
     }
     div {
       border: 1px solid black;
@@ -203,15 +206,20 @@ header {
         float: left;
         width: 5%;
         height: 100%;
+        font-size: 2.8rem;
+        text-align: center;
+        padding: 300px 0
       }
       .Gallary {
         float: left;
         width: 90%;
         height: 100%;
       }
+      img {
+        display: block; margin: 0px auto;
+      }
     }
     footer {
-
       border: 1px solid black;
       height: 15%;
       .CurrentImage {

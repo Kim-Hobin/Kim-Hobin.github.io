@@ -31,18 +31,18 @@ class Modal extends Component {
             <div className={styles.Modal} onClick={this.props.close}>
                 <section onClick={(e) => e.stopPropagation()}> {/*모달 영역 클릭시 닫히지않도록 설정*/}
                     <header>
-                        {this.props.title}
-                        {this.props.subtitle}
+                        <h5>{this.props.title}</h5>
+                        <p>{this.props.subtitle}</p>
                     </header>
                     <div>
                         <div className={styles.Arrow}>
-                            <button onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}>(</button>
+                            <i class="fas fa-arrow-alt-circle-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
                         </div>
                         <div className={styles.Gallary}>
                             <img src={image}></img>
                         </div>
                         <div className={styles.Arrow}>
-                            <button onClick={() => this.changeImage((this.state.index + 1) % cnt)}>)</button>
+                            <i class="fas fa-arrow-alt-circle-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>
                         </div>
                     </div>
                     <footer>

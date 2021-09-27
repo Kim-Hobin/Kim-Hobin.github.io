@@ -36,13 +36,13 @@ class Modal extends Component {
                     </header>
                     <div>
                         <div className={styles.Arrow}>
-                            <i class="fas fa-arrow-alt-circle-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
+                            <i class="fas fa-chevron-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
                         </div>
                         <div className={styles.Gallary}>
                             <img src={image}></img>
                         </div>
                         <div className={styles.Arrow}>
-                            <i class="fas fa-arrow-alt-circle-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>
+                            <i class="fas fa-chevron-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>
                         </div>
                     </div>
                     <footer>

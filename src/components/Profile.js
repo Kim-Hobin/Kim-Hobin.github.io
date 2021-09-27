@@ -5,11 +5,10 @@ class Profile extends Component {
     render() {
         var data = this.props.data;
         const tags = data.contents.map((tag) => (
-            <a className={styles.SpinButton} href={tag.link}>
+            <a className={styles.SpinButton} target="_blabk" href={tag.link}>
                 <i class={tag.style}></i>
             </a>
         ))
-
         return (
             <header>
                 <div>

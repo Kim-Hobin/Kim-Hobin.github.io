@@ -15,6 +15,7 @@ class Modal extends Component {
     }
 
     render() {
+        const folder = this.props.folder;
         const image = this.props.images[this.state.index]; // Gallary Image
         const cnt = this.props.images.length; // 이미지 개수        
         const images = this.props.images.map((image, index) => { // 썸네일 이미지
@@ -23,7 +24,7 @@ class Modal extends Component {
             }
             return (
                 <button className={ClassName} onClick={() => this.changeImage(index)}>
-                    <img className={styles.ImageView} src={image}></img>
+                    <img className={styles.ImageView} src={`projects/${folder}/${image}.png`}></img>
                 </button>
             )
         })
@@ -39,7 +40,7 @@ class Modal extends Component {
                             <i class="fas fa-chevron-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
                         </div>
                         <div className={styles.Gallary}>
-                            <img src={image}></img>
+                            <img src={`projects/${folder}/${image}.png`}></img>
                         </div>
                         <div className={styles.Arrow}>
                             <i class="fas fa-chevron-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>

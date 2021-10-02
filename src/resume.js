@@ -10,7 +10,7 @@ export const resume = {
     },
     intro: {
         subject: "About Me",
-        content: "안녕하세요 웹 개발을 꿈꾸는 학생입니다. 현재 리엑트와 백준이라는 알고리즘 문제 푸는 사이트를 통해 알고리즘 공부하고 있습니다."
+        content: "안녕하세요"
     },
 
     skills: {
@@ -44,31 +44,45 @@ export const resume = {
                 left_subtitle: "2021.9 ~ 2021.9",
                 left_add: "https:/asdadasd.com",
                 right_title: "기술 이력서",
-                right_subtitle: "",
+                right_subtitle: "Github Page 이력서",
                 content: [
-                    "웹 프론트엔드 프레임워크인 리엑트를 공부하며 실습으로 만든 이력서",
-                    "전체를 Wrapper, Left, Right 3부분으로 컴포넌트를 나누어 재사용할 수 있도록 구현",
-                    "동적인 프로필 버튼과 이미지 모달 구현",
+                    { main: "웹 프론트엔드 프레임워크인 리엑트를 공부하며 실습으로 만든 이력서", sub: [] },
+                    { main: "전체를 Wrapper, Left, Right 3부분으로 컴포넌트를 나누어 재사용할 수 있도록 구현", sub: [] },
+                    { main: "동적인 프로필 버튼과 이미지 모달 구현", sub: ["asdfasfsadf", "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ", "ㅁㅁㄴㅇㄴㅁㅇㅁㅁㅁ"] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./resume",
                 images: [
-                    'logo512.png',
-                    'test.png'
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                ],
+                pdfs: [
                 ]
             },
             {
                 left_title: "",
                 left_subtitle: "2021.07 ~ 2021.08",
                 left_add: "https:/asdadasd.com",
-                right_title: "하우스 메뉴얼",
+                right_title: "하우스 매뉴얼",
                 right_subtitle: "숙박 예약 페이지 솔루션 프로젝트",
                 content: [
-                    "고객이 숙박을 예약하면 URl을 통해 고객이 예약정보를 알 수 있도록 함",
-                    "html, css, javascript로 클라이언트, Django + MongoDB 서버 구현",
-                    "기본적인 CRUD 및 반응형 웹앱으로 구현",
+                    { main: "고객이 숙박을 예약하면 URl을 통해 고객이 예약정보를 알 수 있도록 함", sub: [] },
+                    { main: "html, css, javascript로 클라이언트, Django + MongoDB 서버 구현", sub: [] },
+                    { main: "기본적인 CRUD 및 반응형 웹앱으로 구현", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./house-manual",
                 images: [
-                    'logo512.png',
-                    'test.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
                 ]
             },
             {
@@ -78,20 +92,30 @@ export const resume = {
                 right_title: "광학음악인식기반 자동편곡시스템",
                 right_subtitle: "캡스톤디자인1, 2 교과목 연계 졸업프로젝트",
                 content: [
-                    "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로\
-                    출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함",
-                    "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음",
-                    "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성",
-                    "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며,\
-                    속도를 위해 jni + ndk를 사용함",
-                    "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현",
-                    "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함",
-                    "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨",
-                    "느낀점 ---- ",
+                    {
+                        main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로\
+                    출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함", sub: []
+                    },
+                    { main: "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음", sub: [] },
+                    { main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성", sub: [] },
+                    {
+                        main: "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며,\
+                    속도를 위해 jni + ndk를 사용함", sub: []
+                    },
+                    { main: "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현", sub: [] },
+                    { main: "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함", sub: [] },
+                    { main: "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨", sub: [] },
+                    { main: "느낀점 ---- ", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./senior-project",
                 images: [
-                    'logo512.png',
-                    'test.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
                 ]
             },
             {
@@ -101,13 +125,20 @@ export const resume = {
                 right_title: "PC 견적관리 웹사이트",
                 right_subtitle: "데이터베이스설계 교과목 연계 프로젝트",
                 content: [
-                    "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트",
-                    "로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공",
-                    "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
+                    { main: "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트", sub: [] },
+                    { main: "로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공", sub: [] },
+                    { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./pc-auction",
                 images: [
-                    'logo512.png',
-                    'test.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
+
                 ]
             },
             {
@@ -117,14 +148,20 @@ export const resume = {
                 right_title: "도서 관리시스템",
                 right_subtitle: "데이터베이스설계 교과목 연계 프로젝트",
                 content: [
-                    "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현",
-                    "로그인/로그아웃, 회원가입, 마이페이지(신용카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공",
-                    "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
-                    "MySQL로 객체의 속성이나 관계에 대해 직접 설계",
+                    { main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현", sub: [] },
+                    { main: "로그인/로그아웃, 회원가입, 마이페이지(신용카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공", sub: [] },
+                    { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] },
+                    { main: "MySQL로 객체의 속성이나 관계에 대해 직접 설계", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./book-manage",
                 images: [
-                    'logo512.png',
-                    'test.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
                 ]
             },
             {
@@ -134,16 +171,28 @@ export const resume = {
                 right_title: "플리마켓 통합관리시스템",
                 right_subtitle: "소프트웨어분석설계과목 교과목 연계 프로젝트",
                 content: [
-                    "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, \
-                    다양한 문서를 작성 해본 프로젝트",
-                    "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 \
-                    하는 플리마켓 통합 관리 시스템",
-                    "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성",
-                    "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음",
+                    {
+                        main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, \
+                    다양한 문서를 작성 해본 프로젝트", sub: []
+                    },
+                    {
+                        main: "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 \
+                    하는 플리마켓 통합 관리 시스템", sub: []
+                    },
+                    { main: "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성", sub: [] },
+                    { main: "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./fleamarket",
                 images: [
-                    'logo512.png',
-                    'test.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
+                    '1',
+                    '2',
                 ]
             },
             {
@@ -153,14 +202,21 @@ export const resume = {
                 right_title: "TAPC2",
                 right_subtitle: "소프트웨어개발실습4 교과목 연계 프로젝트",
                 content: [
-                    "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발",
-                    "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현",
-                    "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현",
-                    "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트",
+                    { main: "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발", sub: [] },
+                    { main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현", sub: [] },
+                    { main: "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현", sub: [] },
+                    { main: "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./tapc2",
                 images: [
-                    'logo512.png',
-                    'test.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
+
                 ]
             },
             {
@@ -170,13 +226,19 @@ export const resume = {
                 right_title: "배드민턴 쇼핑몰",
                 right_subtitle: "소프트웨어개발실습2 교과목 연계 프로젝트",
                 content: [
-                    "배드민턴 관련 쇼핑몰 사이트",
-                    "html + css + javascript을 기반으로 서버가 없는 정적 페이지",
+                    { main: "배드민턴 관련 쇼핑몰 사이트", sub: [] },
+                    { main: "html + css + javascript을 기반으로 서버가 없는 정적 페이지", sub: [] },
                 ],
+                keywords: [
+                    "HTML", "CSS", "JS"
+                ],
+                folder: "./badmintorn-market",
                 images: [
-                    'test.png',
-                    'test2.png',
-                    'test3.png',
+                    '1',
+                    '2',
+                ],
+                pdfs: [
+
                 ]
             },
         ],
@@ -212,25 +274,25 @@ export const resume = {
             {
                 left_subtitle: "2020.12.17",
                 right_title: "2020년도 온택트기반 동서인 FAIR - 최우수상",
-                right_subtitle: "광학 음악 인식 기반 편곡 시스템",
+                right_subtitle: "",
                 right: [],
             },
             {
                 left_subtitle: "2020.11.28",
                 right_title: "한국지능시스템학회 30주년 기념 2020 추계학술대회 - 우수논문상",
-                right_subtitle: "광학 음악 인식 기반 편곡 시스템",
+                right_subtitle: "",
                 right: [],
             },
             {
                 left_subtitle: "2020.08.31",
                 right_title: "동서인 AI해커톤 경진대회 - 장려상",
-                right_subtitle: "컴퓨터 비전을 이용한 악보 인식 기반 편곡 시스템",
+                right_subtitle: "",
                 right: [],
             },
             {
                 left_subtitle: "2020.06.08",
                 right_title: "2020년도 동서 AI·SW 아이디어 경진대회 - 장려상",
-                right_subtitle: "광학 음악 인식을 이용한 자동 편곡 시스템",
+                right_subtitle: "",
                 right: [],
             },
 

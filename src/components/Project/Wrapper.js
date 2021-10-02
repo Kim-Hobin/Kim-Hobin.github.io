@@ -9,7 +9,8 @@ class Project extends Component {
     const tags = data.contents.map((tag) => (
       <div className={styles.Wrapper}>
         <Left title={tag.left_title} subtitle={tag.left_subtitle} add={tag.left_add}></Left>
-        <Right title={tag.right_title} subtitle={tag.right_subtitle} content={tag.content} images={tag.images}></Right>
+        <Right title={tag.right_title} subtitle={tag.right_subtitle} content={tag.content}
+          folder={tag.folder} images={tag.images} pdfs={tag.pdfs} keywords={tag.keywords}></Right>
       </div>
     ))
     return (

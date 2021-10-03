@@ -5,11 +5,12 @@ class Content extends Component {
     render() {
         var content = this.props.content;
         const tags = content.map((tag) => (
-            <span>{tag}</span>
+
+            <li>{tag}</li>
         ))
         return (
             <div>
-                {tags}
+                <ul>{tags}</ul>
             </div>
         )
     }

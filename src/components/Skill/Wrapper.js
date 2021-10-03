@@ -16,7 +16,9 @@ class Skill extends Component {
                 <h2>{data.subject}</h2>
                 <div className={styles.border_top}></div>
                 <div className={styles.border_bot}></div>
-                {tags}
+                <div className={styles.flex}>
+                    {tags}
+                </div>
             </section>
         )
     }

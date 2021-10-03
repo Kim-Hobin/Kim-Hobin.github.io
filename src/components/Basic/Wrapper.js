@@ -13,7 +13,7 @@ class Basic extends Component {
             </div>
         ))
         return (
-            <section className={styles.basic}>
+            <section className={styles.Basic}>
                 <h2>{data.subject}</h2>
                 <div className={styles.border_top}></div>
                 <div className={styles.border_bot}></div>

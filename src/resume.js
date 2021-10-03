@@ -1,6 +1,6 @@
 export const resume = {
     profiles: {
-        subject: "Profiles", name: "김호빈", intro: "Web Frontend Enginier",
+        subject: "Profiles", name: "김호빈", intro: "Front-and 개발자 지망생",
         contents: [
             { title: "전화번호", link: "010 - 5534 - 0573", style: "fas fa-phone-volume" },
             { title: "email", link: "isb0573@naver.com", style: "fas fa-at" },
@@ -29,9 +29,9 @@ export const resume = {
                 ],
             },
             {
-                title: "DataBase",
+                title: "ETC",
                 content: [
-                    "mySQL", "MongoDB",
+                    "mySQL", "MongoDB", "Git"
                 ],
             },
         ],
@@ -55,10 +55,7 @@ export const resume = {
                 ],
                 folder: "./resume",
                 images: [
-                    '1',
-                    '2',
-                    '3',
-                    '4',
+
                 ],
                 pdfs: [
                 ]
@@ -81,6 +78,9 @@ export const resume = {
                 images: [
                     '1',
                     '2',
+                    '3',
+                    '4',
+                    '5',
                 ],
                 pdfs: [
                 ]

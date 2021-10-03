@@ -10,7 +10,7 @@ class Profile extends Component {
             </a>
         ))
         return (
-            <header>
+            <header className={styles.Profile}>
                 <div>
                     <img src='profile.jpg'></img>
                     <h1>{data.name}</h1>

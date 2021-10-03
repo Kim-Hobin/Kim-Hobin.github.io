@@ -12,6 +12,27 @@
   }
 }
 
+@mixin media-size($mobile, $desktop) {
+  @media all and (max-width: 1023px) {
+    width: $mobile;
+  }
+  width: $desktop;
+}
+
+@mixin media-text-align() {
+  @media all and (max-width: 1023px) {
+    text-align: center;
+  }
+  text-align: initial;
+}
+
+@mixin media-flex-direction() {
+  @media all and (max-width: 1023px) {
+    flex-direction: column;
+  }
+  flex-direction: row;
+}
+
 @keyframes spin {
   from {
       transform: rotate(0deg);
@@ -21,149 +42,142 @@
   }
 }
 
-.resume {
-  width: 1300px;
-  margin: 0 auto;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  line-height: 2.7;
-}
-html {
-  font-size: 10px;
-}
-h1{
-  margin-top: 2rem;
-  line-height: 0.8;
-  @include font(black, normal, 500, 4.5rem);
-}
-h2 {
-  margin-top: 3px;
-  margin-left: 0.2rem;
-  margin-bottom: -5px;
-  @include font(#444, normal, 500, 4rem);
-}
-h3 {
-  line-height: normal;
-  @include font(#666, normal, 400, 3.5rem);
-}
-h5 {
-  @include font(black, normal, 400, 3rem);
-}
 .border_top{
   width:170px;
   border-top: 2px solid black;
+  @media all and (max-width: 1023px) {
+    margin: 0 auto;
+    width: 300px;
+  }
 }
 .border_bot{
   border-top: 1px solid gray;
 }
-.width_left {
-  width: 30%;
-}
-.width_right {
-  width: 70%;
-  .ImageView {
-    width: 100px;
-    height: 75px;
-    margin-right: 10px;
-    &:hover {
-      cursor: pointer;
-    }
-    margin-top: 5px;
-  }
-}
-header {
-  div {
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    img {
-      margin-top: 10px;
-      border-radius: 50%;
-      height: 30rem;
-      box-shadow: 0 0 5px 5px gray;
-    }
-    a {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
-  }
-}
-.Wrapper {
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 30px;
-  .width_left {
-    width: 30%;
-    float:left;
-    p {
-      @include font(gray, italic, 500, 1.5rem);
-      margin-top :-2.5rem;
-    }
-  }
-  .width_right {
-    width: 70%;
-    float:left;
-    h5 {
-      text-align: left;
-    }
-    li {
-      @include font(black, normal, 400, 1.65rem);
-    }
-    p {
-      @include font(#777, italic, 500, 1.5rem);
-      text-align: left;
-      margin-top: -2.5rem;
-    }
-    .keyword {
-      @include font(#333, normal, 300, 1.5rem);
-      display: inline-block;
-      margin: 0.5rem 0.5rem 0.5rem 0;
-      padding: 1px 6px;
-      background-color: rgb(239, 239, 239);
-      line-height: normal;
-      box-shadow: 0 1px 3px 0 gray;
-      margin-bottom: 5px;
-    }
-    .details {
-      list-style: none;
-      details {
-          margin-left: -19px;
-          @include font(gray, normal, 300, 1.5rem);
-          summary {
-              &:hover {
-                  @include font(black, normal, 300, 1.5rem);
-                  cursor: pointer;
-              }
-          }
-          &[open] {
-              @include font(black, normal, 300, 1.5rem);
-          }
-      }
-    }
-  }
-}
-.Skill {
-  overflow: hidden;
-  width: 100%;
-  .Category {
-    width: 33.3333%;
-    float: left;
+
+.resume {
+  @include media-size(90%, 1200px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; // 중앙정렬
+  .Profile {
+    @include media-text-align();
     div {
       width: 100%;
-      span {
-        display: inline-block;
-        width: 33.33333%;
+      text-align: center;
+      img {
+        margin-top: 50px;
+        border-radius: 50%;
+        height: 25rem;
+        box-shadow: 0 0 5px 5px gray;
+      }
+      a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
       }
     }
   }
+  
+  .Project {
+    .Wrapper {
+      display: flex;
+      @include media-flex-direction();
+      margin-bottom: 30px;
+      word-break: break-all;
+      .width_left {
+        @include media-size(100%, 30%);
+        @include media-text-align();
+        p {
+          @include font(gray, italic, 500, 1.5rem);
+          margin-top :-2.5rem;
+        }
+      }
+      .width_right {
+        width: 70%;
+        @include media-size(100%, 70%);
+        @include media-text-align();
+        li {
+          @include font(black, normal, 400, 1.65rem);
+          text-align: initial;
+        }
+        p {
+          @include font(#777, italic, 500, 1.5rem);
+          @media all and (max-width: 1023px) {
+            text-align: center;
+          }
+          text-align: left;
+          margin-top: -2.5rem;
+        }
+        .ImageView {
+          width: 100px;
+          height: 75px;
+          margin-right: 10px;
+          margin-top: 5px;
+          box-shadow: 0 1px 3px 0 grey;
+          transition: .3s;
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 2px 5px 2px gray;
+            transform: scale(1.05);
+          }
+        }
+        .keyword {
+          @include font(#333, normal, 300, 1.5rem);
+          display: inline-block;
+          margin: 0.5rem 0.5rem 0.5rem 0;
+          padding: 1px 6px;
+          background-color: rgb(239, 239, 239);
+          line-height: normal;
+          box-shadow: 0 1px 3px 0 gray;
+          margin-bottom: 5px;
+        }
+        .details {
+          list-style: none;
+          details {
+            margin-left: -19px;
+            @include font(gray, normal, 300, 1.5rem);
+            summary {
+                &:hover {
+                    @include font(black, normal, 300, 1.5rem);
+                    cursor: pointer;
+                }
+            }
+            &[open] {
+                @include font(black, normal, 300, 1.5rem);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .Skill {
+    width: 100%;
+    .flex {
+      display: flex;
+    }
+    .Category {
+      width: 33.3333%;
+      div {
+        ul {
+          padding-left: 0px;
+          list-style-type: none;
+          display: flex;
+          flex-flow: wrap;
+          li {
+            width: 33.33333%; 
+              @include font(black, normal, 300, 2rem);
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    padding: 5px;
+    height: 80px;
+  }
 }
-.contact {
-  padding: 5px;
-  height: 80px;
-}
+
+// Modal, SpinButton
 .SpinButton {
   display: inline-block; // inline 엘리먼트 사용 시 width, height 무시 -> 컨텐츠 공간만큼, marign, padding 상하 반영 x
   position: relative;
@@ -192,7 +206,6 @@ header {
   }
   &:hover {
     cursor: pointer;
-
     &::before {
       border: 2px solid white;
       border-top: 2px solid black;
@@ -209,6 +222,7 @@ header {
     }
   }
 }
+
 .Modal {
   position: fixed;
   top: 0;
@@ -272,7 +286,6 @@ header {
       .CurrentImage {
         border: 3px solid #888;
       }
-
     }
   }
 }

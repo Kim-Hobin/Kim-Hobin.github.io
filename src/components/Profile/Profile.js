@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import styles from '../styles.module.scss';
+import profile from './profile.module.scss';
 
 class Profile extends Component {
     render() {
         var data = this.props.data;
         const tags = data.contents.map((tag) => (
-            <a className={styles.SpinButton} target="_blabk" href={tag.link}>
+            <a className={profile.SpinButton} target="_blabk" href={tag.link}>
                 <i class={tag.style}></i>
             </a>
         ))
         return (
-            <header className={styles.Profile}>
+            <header className={profile.Profile}>
                 <div>
                     <img src='profile.jpg'></img>
                     <h1>{data.name}</h1>
                     <h3>{data.intro}</h3>
-                    <div className={styles.contact}>
+                    <div className={profile.contact}>
                         {tags}
                     </div>
                 </div>

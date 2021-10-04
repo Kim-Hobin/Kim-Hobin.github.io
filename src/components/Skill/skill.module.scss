@@ -1,0 +1,29 @@
+@import '../../mixins.module.scss';
+
+.Skill {
+    .flex {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .Category {
+        @media all and (max-width: 1023px) {
+        width: 100%;
+        }
+        width: 33.3333%;
+        h5, li {
+            @include media-text-align();
+        }
+        div {
+            ul {
+            display: flex;
+            padding-left: 0px;
+            list-style-type: none;
+            flex-flow: wrap;
+                li {
+                    width: 33.3333%;
+                    @include font(black, normal, 300, 2rem);
+                }
+            }
+        }
+    }
+}

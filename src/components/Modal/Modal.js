@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../styles.module.scss';
+import modal from './modal.module.scss';
 
 class Modal extends Component {
     constructor(props) {
@@ -20,29 +20,29 @@ class Modal extends Component {
         const cnt = this.props.images.length; // 이미지 개수        
         const images = this.props.images.map((image, index) => { // 썸네일 이미지
             if (index === this.state.index) { // 썸네일 이미지 : Gallary
-                var ClassName = styles.CurrentImage;
+                var ClassName = modal.CurrentImage;
             }
             return (
                 <button className={ClassName} onClick={() => this.changeImage(index)}>
-                    <img className={styles.ImageView} src={`projects/${folder}/${image}.png`}></img>
+                    <img className={modal.ImageView} src={`projects/${folder}/${image}.png`}></img>
                 </button>
             )
         })
         return (
-            <div className={styles.Modal} onClick={this.props.close}>
+            <div className={modal.Modal} onClick={this.props.close}>
                 <section onClick={(e) => e.stopPropagation()}> {/*모달 영역 클릭시 닫히지않도록 설정*/}
                     <header>
                         <h5>{this.props.title}</h5>
                         <p>{this.props.subtitle}</p>
                     </header>
                     <div>
-                        <div className={styles.Arrow}>
+                        <div className={modal.Arrow}>
                             <i class="fas fa-chevron-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
                         </div>
-                        <div className={styles.Gallary}>
+                        <div className={modal.Gallary}>
                             <img src={`projects/${folder}/${image}.png`}></img>
                         </div>
-                        <div className={styles.Arrow}>
+                        <div className={modal.Arrow}>
                             <i class="fas fa-chevron-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>
                         </div>
                     </div>

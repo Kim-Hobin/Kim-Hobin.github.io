@@ -1,6 +1,6 @@
 import styles from '../../styles.module.scss';
 import React, { Component } from 'react';
-import Modal from '../Modal';
+import Modal from '../Modal/Modal';
 import { Link } from 'react-router-dom';
 class Right extends Component {
   constructor() {

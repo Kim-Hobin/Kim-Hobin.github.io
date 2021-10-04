@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 class Left extends Component {
   render() {
     return (
-      <span className={styles.width_left}>
-        <h5>{this.props.subtitle}</h5>
-        <p>{this.props.add}</p>
-      </span>
+      <div className={styles.width_left}>
+        <h5>{this.props.title}</h5>
+        <a href={this.props.add} target="_blank">{this.props.add}</a>
+      </div>
     );
   }
 }

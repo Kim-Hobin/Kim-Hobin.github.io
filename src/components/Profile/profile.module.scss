@@ -1,0 +1,76 @@
+@import '../../mixins.module.scss';
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Profile {
+    @include media-text-align();
+    div {
+        width: 100%;
+        text-align: center;
+        img {
+            margin-top: 50px;
+            border-radius: 50%;
+            height: 25rem;
+            box-shadow: 0 0 5px 5px gray;
+        }
+        a {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .contact {
+        padding: 5px;
+        height: 80px;
+        .SpinButton {
+            display: inline-block; // inline 엘리먼트 사용 시 width, height 무시 -> 컨텐츠 공간만큼, marign, padding 상하 반영 x
+            position: relative;
+            width: 3.5rem;
+            height: 3.5rem;
+            text-align: center; // 수평정렬
+            color: white;
+            i {
+                font-size: 2.5rem; // 폰트어썸(마크를 글자취급)
+                line-height: 3.5rem; // 수직정렬(글자 높이)
+                transition: 0.5s;
+            }
+            &::before {
+                box-sizing: inherit;
+                content: '';
+                position:absolute;
+                top:0;
+                left:0;
+                color: black;
+                width: inherit;
+                height: inherit;
+                z-index: -1;
+                border-radius: 50%;
+                box-shadow: inset 0 0 0 20px #777;
+                transition: 0.5s;
+            }
+            &:hover {
+                cursor: pointer;
+                &::before {
+                    border: 2px solid white;
+                    border-top: 2px solid black;
+                    box-shadow: inset 0 0 0 2px black;
+                    animation: {
+                        name: spin;
+                        duration: 1s;
+                        iteration-count: infinite;
+                        timing-function: linear;
+                    }
+                }
+                i {
+                    color: black;
+                }
+            }
+        }
+    }
+}

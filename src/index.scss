@@ -2,51 +2,82 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 
 @mixin font($color, $style, $weight, $size) {
-  color: $color;
-  font: {
-    display: swap;
-    family: 'IBM Plex Sans Arabic', 'IBM Plex Sans KR', sans-serif;
-    style: $style;
-    weight: $weight;
-    size: $size;
-  }
+    color: $color;
+    font: {
+        display: swap;
+        family: 'IBM Plex Sans Arabic', 'IBM Plex Sans KR', sans-serif;
+        style: $style;
+        weight: $weight;
+        size: $size;
+    }
 }
 
 @mixin media-text-align() {
-  @media all and (max-width: 1023px) {
-    text-align: center;
-  }
-  text-align: initial;
+    @media all and (max-width: 1023px) {
+        text-align: center;
+    }
+    text-align: initial;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  line-height: 2.7;
+    box-sizing: border-box;
+    margin: 0px;
+    line-height: 2;
 }
 
 html {
-  font-size: 10px;
+    @media all and (max-width: 1023px) {
+        font-size: 8px;
+    }
+    font-size: 10px;
 }
 
 h1{ // 이름
-  @include font(black, normal, 400, 4rem);
-  line-height: 1.2;
+    @include font(black, normal, 500, 5rem);
+    line-height: 1.2;
 }
 
 h2 { //
-  margin-top: 3px;
-  margin-left: 0.2rem;
-  margin-bottom: -5px;
-  @include font(#444, normal, 500, 4rem);
-  @include media-text-align();
+    margin-top: 3px;
+    margin-left: 0.2rem;
+    @include font(#444, normal, 500, 4rem);
+    @include media-text-align();
 }
 
 h3 { 
-  line-height: 1.2;
-  @include font(#666, normal, 300, 2rem);
+    line-height: normal;
+    @include font(#666, normal, 300, 2rem);
 }
 
 h5 {
-  @include font(black, normal, 400, 3rem);
+    line-height: normal;
+    @include font(black, normal, 400, 3rem);
+}
+
+a {
+    @media all and (max-width: 1023px) {
+        display: none;
+    }
+    display: initial;
+    @include font(gray, italic, 500, 2rem);
+    text-decoration: none;
+    &:hover {
+        color:black;
+    }
+}
+
+p {
+    @include font(#777, normal, 400, 2rem);
+    @include media-text-align();
+}
+
+li {
+    @include font(black, normal, 400, 2rem);
+    text-align: initial;
+}
+
+embed {
+    position: absolute;
+    width:100%;
+    height: 100%;
 }

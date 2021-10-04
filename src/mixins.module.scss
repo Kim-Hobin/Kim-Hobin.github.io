@@ -1,0 +1,36 @@
+@mixin font($color, $style, $weight, $size) {
+    color: $color;
+    font: {
+        display: swap;
+        family: 'IBM Plex Sans Arabic', 'IBM Plex Sans KR', sans-serif;
+        style: $style;
+        weight: $weight;
+        size: $size;
+    }
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height
+}
+  
+@mixin media-size($mobile, $desktop) {
+    @media all and (max-width: 1023px) {
+        width: $mobile;
+    }
+    width: $desktop;
+}
+
+@mixin media-text-align() {
+    @media all and (max-width: 1023px) {
+        text-align: center;
+    }
+    text-align: initial;
+}
+
+@mixin media-flex-direction() {
+    @media all and (max-width: 1023px) {
+        flex-direction: column;
+    }
+    flex-direction: row;
+}

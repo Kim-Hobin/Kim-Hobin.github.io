@@ -41,17 +41,17 @@ class Right extends Component {
     const pdfs = this.props.pdfs.map((pdf) => <Link to={`/pdfviewer/${folder}/${pdf}`} target="_blank">PDF GO</Link>)
 
     return (
-      <div className={styles.width_right}>
+      <div className={styles.right}>
         <div>
           <h5>{this.props.title}</h5>
           <p>{this.props.subtitle}</p>
           <ul>{tags}</ul>
         </div>
         <div>
-          {keywords}
+          {images}
         </div>
         <div>
-          {images}
+          {keywords}
         </div>
         <div>
           {pdfs}

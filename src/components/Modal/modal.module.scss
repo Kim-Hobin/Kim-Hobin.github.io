@@ -1,63 +1,119 @@
 @import '../../mixins.module.scss';
 
+$ratio : 1.2;
+
 .Modal {
+    // close 버튼 겹치기
+    // background 처리
+    // pdf 처리
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    z-index: 99;
     section {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 70%;
-        height: 95%;
         background-color: rgb(224,224,224);
-        transform: translate(-50%, -50%);
-        header {
-            height: 10%;
-            text-align:center;
-        }
-        div {
-            height: 80%;
-            .Arrow {
-                float: left;
-                width: 5%;
-                height: 100%;
-                background-color: white;
-                color: rgb(100,100,100);
-                font-size: 5rem;
-                text-align: center;
-                padding: 300px 0
+        position: relative;
+        @include if-mobile {
+            width: 90vw;
+            height: calc(90vw / 1.618);
+            .i {
+                font-size: 3rem;
             }
-            .Gallary {
-                float: left;
-                width: 90%;
-                height: 100%;
-                background-color: white;
-                img {
-                width: 90%;
-                height: 100%;
-                object-fit:contain;
+        }
+        width: 75vw;
+        height: calc(75vw / 1.618);
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 10%;
+            h5 {
+                @include if-mobile {
+                    font-size: calc(1.5vw * #{$ratio});
+                }
+                font-size: 1.5vw;
+            }
+            p {
+                @include if-mobile {
+                    display: none;
+                }
+                font-size: 1vw;
+                line-height: normal;
+            }
+            i {
+                position: absolute;
+                right: 1%;
+                top:1%;
+                @include if-mobile {
+                    font-size:calc(2.083vw * #{$ratio});
+                }
+                font-size: 2.083vw;
+                transition: 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    color: #999;
+                    transform: scale(1.2) translate(0%, 0%);
                 }
             }
-            img {
-                display: block; margin: 0px auto;
+        }
+        .Gallary {
+            display: flex;
+            height: 80%;
+            i {
+                position: absolute;
+                top:50%;
+                @include if-mobile {
+                    font-size: calc(2.6041vw * #{$ratio})
+                }
+                font-size: 2.6041vw;
+                transform: translate(0%, -50%);
+                transition: 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    transform: translate(0%, -50%) scale(1.2);
+                    color:  #999
+                }
+            }
+            .Slide {
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                img {
+                    height: inherit;
+                    object-fit: contain;
+                    
+                }
             }
         }
         footer {
             background-color: rgb(224,224,224);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 10%;
-            text-align: center;
             button {
-                width:10%;
-                height:100%;
-                margin-left:10px;
-                margin-right:10px;
-                img{        
-                    @include size(100px, 75px);
-                    margin: 5px 10px 0 0;
+                @include if-mobile {
+                    width:calc(6vw * #{$ratio});
+                    height:calc(6vw * #{$ratio} / 1.5);
+                }
+                width:6vw;
+                height:calc(6vw / 1.5);
+                margin-left:3px;
+                margin-right:3px;
+                line-height: 0;
+                padding: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
                     box-shadow: 0 1px 3px 0 grey;
                     transition: .3s;
                     &:hover {

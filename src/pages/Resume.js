@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Profile from '../components/Profile/Profile';
-import Intro from '../components/Intro/Wrapper';
+import Intro from '../components/Intro/Intro';
 import Main from '../components/Main/Wrapper';
 import Skill from '../components/Skill/Wrapper';
 import Footer from '../components/Footer/Footer';

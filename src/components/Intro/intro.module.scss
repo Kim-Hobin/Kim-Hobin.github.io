@@ -1,0 +1,9 @@
+@import '../../mixins.module.scss';
+
+.Intro {
+    .content {
+        font-style: normal;
+        @include font(#000, normal, 400, 1.5rem);
+        word-spacing: 3px;
+    }
+}

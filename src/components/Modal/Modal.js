@@ -18,7 +18,7 @@ class Modal extends Component {
         const folder = this.props.folder;
         const image = this.props.images[this.state.index]; // Gallary Image
         const cnt = this.props.images.length; // 이미지 개수        
-        const images = this.props.images.map((image, index) => { // 썸네일 이미지
+        const thumbnails = this.props.images.map((image, index) => { // 썸네일 이미지
             if (index === this.state.index) { // 썸네일 이미지 : Gallary
                 var ClassName = modal.CurrentImage;
             }
@@ -34,20 +34,17 @@ class Modal extends Component {
                     <header>
                         <h5>{this.props.title}</h5>
                         <p>{this.props.subtitle}</p>
+                        <i class="fas fa-times" onClick={this.props.close}></i>
                     </header>
-                    <div>
-                        <div className={modal.Arrow}>
-                            <i class="fas fa-chevron-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
-                        </div>
-                        <div className={modal.Gallary}>
+                    <div className={modal.Gallary}>
+                        <i style={{ left: "1%" }} class="fas fa-chevron-left" onClick={() => this.changeImage(((this.state.index - 1) + cnt) % cnt)}></i>
+                        <div className={modal.Slide}>
                             <img src={`projects/${folder}/${image}.png`}></img>
                         </div>
-                        <div className={modal.Arrow}>
-                            <i class="fas fa-chevron-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>
-                        </div>
+                        <i style={{ right: "1%" }} class="fas fa-chevron-right" onClick={() => this.changeImage(((this.state.index + 1) + cnt) % cnt)}></i>
                     </div>
                     <footer>
-                        {images}
+                        {thumbnails}
                     </footer>
                 </section >
             </div >

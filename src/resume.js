@@ -1,16 +1,16 @@
 export const resume = {
     profiles: {
-        subject: "Profiles", name: "김호빈", intro: "Front-end 개발자 지망생",
+        subject: "Profiles", name: "김호빈", intro: "Junior Software Engineer",
         contents: [
-            { title: "전화번호", link: "010 - 5534 - 0573", style: "fas fa-phone-volume" },
-            { title: "email", link: "isb0573@naver.com", style: "fas fa-at" },
+            { title: "전화번호", link: "", style: "fas fa-phone-volume" },
+            { title: "email", link: "mailto:isb0573@naver.com", style: "fas fa-at" },
             { title: "git", link: "https://github.com/Kim-Hobin", style: "fab fa-github" },
             { title: "blog", link: "https://isb0573.tistory.com/", style: "fas fa-blog" },
         ],
     },
     intro: {
         subject: "About Me",
-        content: "안녕하세요!! Front-and 개발자를 꿈꾸는 학생입니다. \
+        content: "안녕하세요!! Front-end 개발자를 꿈꾸는 학생입니다. \
         학창시절, 논문을 쓰고 학술대회에 참가하여 발표를 하여 운좋게 우수논문상을 받았습니다. \
         특허출원도 해보았고, 새로 신설된 AI 부전공을 이수하는 등 많은 경험을 할 수 있었습니다. \
         하지만 직접적으로 개발을 했던 경험이 적고 개발실력이 부족하다고 생각하여 \
@@ -20,26 +20,25 @@ export const resume = {
         배우는 것에 욕심이 많고 한번 붙잡으면 미친듯이 하는 편입니다.\
         많이 배우고 성장할 수 있는 기회가 있었으면 좋겠습니다."
     },
-
     skills: {
         subject: "Skills",
         contents: [
             {
                 title: "Front-end",
                 content: [
-                    "HTML/CSS", "javaScrpit", "React"
+                    "HTML", "CSS", "javaScrpit", "React"
                 ],
             },
             {
                 title: "Back-end",
                 content: [
-                    "C", "C++", "PHP", "Android", "Java", "Node.js"
+                    "C++", "PHP", "Python", "Node.js", "Django", "Spring"
                 ],
             },
             {
                 title: "ETC",
                 content: [
-                    "mySQL", "MongoDB", "Git"
+                    "Git", "mySQL", "MongoDB",
                 ],
             },
         ],
@@ -57,7 +56,7 @@ export const resume = {
                     { main: "전체를 Wrapper, Left, Right 3부분으로 컴포넌트를 나누어 재사용할 수 있도록 구현", sub: [] },
                     { main: "동적인 프로필 버튼과 이미지 모달 구현", sub: ["asdfasfsadf", "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ", "ㅁㅁㄴㅇㄴㅁㅇㅁㅁㅁ"] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["React", "HTML", "CSS", "JS"],
                 folder: "./resume",
                 images: [],
                 pdfs: []
@@ -72,33 +71,26 @@ export const resume = {
                     { main: "html, css, javascript로 클라이언트, Django + MongoDB 서버 구현", sub: [] },
                     { main: "기본적인 CRUD 및 반응형 웹앱으로 구현", sub: [] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["Django", "MongoDB", "HTML", "CSS", "JS"],
                 folder: "./house-manual",
-                images: ['1', '2', '3', '4', '5',],
+                images: ['1', '2', '3', '4', '5'],
                 pdfs: []
             },
             {
                 left_title: "2020.03 ~ 2020.12",
                 left_add: "https:/asdadasd.com",
-                right_title: "광학음악인식기반 자동편곡시스템",
+                right_title: "광학 음악 인식 기반 자동 편곡 시스템",
                 right_subtitle: "캡스톤디자인1, 2 교과목 연계 졸업프로젝트",
                 content: [
-                    {
-                        main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로\
-                    출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함", sub: []
-                    },
+                    { main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함", sub: [] },
                     { main: "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음", sub: [] },
                     { main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성", sub: [] },
-                    {
-                        main: "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며,\
-                    속도를 위해 jni + ndk를 사용함", sub: []
-                    },
+                    { main: "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함", sub: [] },
                     { main: "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현", sub: [] },
                     { main: "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함", sub: [] },
                     { main: "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨", sub: [] },
-                    { main: "느낀점 ---- ", sub: [] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["C++", "JAVA", "Python", "Android", "OpenCV", "TensorFlow"],
                 folder: "./senior-project",
                 images: ['1', '2'],
                 pdfs: []
@@ -106,14 +98,14 @@ export const resume = {
             {
                 left_title: "2019.09 ~ 2019.12",
                 left_add: "https:/asdadasd.com",
-                right_title: "PC 견적관리 웹사이트",
-                right_subtitle: "데이터베이스설계 교과목 연계 프로젝트",
+                right_title: "PC 견적 관리 웹사이트",
+                right_subtitle: "데이터베이스 설계 교과목 연계 프로젝트",
                 content: [
                     { main: "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트", sub: [] },
                     { main: "로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공", sub: [] },
                     { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
                 folder: "./PC-auction",
                 images: ['1', '2'],
                 pdfs: []
@@ -121,15 +113,15 @@ export const resume = {
             {
                 left_title: "2019.09 ~ 2019.12",
                 left_add: "",
-                right_title: "도서 관리시스템",
-                right_subtitle: "데이터베이스설계 교과목 연계 프로젝트",
+                right_title: "온라인 도서 구매 시스템",
+                right_subtitle: "데이터베이스 설계 교과목 연계 프로젝트",
                 content: [
                     { main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현", sub: [] },
                     { main: "로그인/로그아웃, 회원가입, 마이페이지(신용카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공", sub: [] },
                     { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] },
                     { main: "MySQL로 객체의 속성이나 관계에 대해 직접 설계", sub: [] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["PHP", "MySQL", "HTML", "CSS", "JS"],
                 folder: "./book-manage",
                 images: ['1', '2'],
                 pdfs: []
@@ -137,37 +129,31 @@ export const resume = {
             {
                 left_title: "2019.09 ~ 2019.12",
                 left_add: "https:/asdadasd.com",
-                right_title: "플리마켓 통합관리시스템",
+                right_title: "플리마켓 통합 관리 시스템",
                 right_subtitle: "소프트웨어분석설계과목 교과목 연계 프로젝트",
                 content: [
-                    {
-                        main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, \
-                    다양한 문서를 작성 해본 프로젝트", sub: []
-                    },
-                    {
-                        main: "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 \
-                    하는 플리마켓 통합 관리 시스템", sub: []
-                    },
+                    { main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, 다양한 문서를 작성 해본 프로젝트", sub: [] },
+                    { main: "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템", sub: [] },
                     { main: "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성", sub: [] },
                     { main: "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음", sub: [] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["StarUML"],
                 folder: "./fleamarket",
-                images: ['1', '2'],
+                images: [],
                 pdfs: ['1', '2']
             },
             {
                 left_title: "2019.09 ~ 2019.12",
                 left_add: "",
                 right_title: "TAPC2",
-                right_subtitle: "소프트웨어개발실습4 교과목 연계 프로젝트",
+                right_subtitle: "소프트웨어 개발 실습4 교과목 연계 프로젝트",
                 content: [
                     { main: "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발", sub: [] },
                     { main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현", sub: [] },
                     { main: "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현", sub: [] },
                     { main: "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트", sub: [] },
                 ],
-                keywords: ["HTML", "CSS", "JS"],
+                keywords: ["Node.js", "MySQL", "JAVA", "JavaScrpit", "Andriod"],
                 folder: "./tapc2",
                 images: ['1', '2'],
                 pdfs: []

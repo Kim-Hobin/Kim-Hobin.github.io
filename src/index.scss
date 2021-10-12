@@ -23,6 +23,7 @@
     box-sizing: border-box;
     margin: 0px;
     line-height: 2;
+    word-spacing: 2px;
 }
 
 html {
@@ -33,46 +34,47 @@ html {
 }
 
 h1{ // 이름
-    @include font(black, normal, 500, 5rem);
+    @include font(black, normal, 500, 4rem);
     line-height: 1.2;
 }
 
-h2 { //
-    margin-top: 3px;
+h2 { // subject
+    margin-top: 20px;
     margin-left: 0.2rem;
-    @include font(#444, normal, 500, 4rem);
+    @include font(#444, normal, 500, 3rem);
     @include media-text-align();
 }
 
-h3 { 
-    line-height: normal;
+h3 { // 직업
     @include font(#666, normal, 300, 2rem);
-}
-
-h5 {
     line-height: normal;
-    @include font(black, normal, 400, 3rem);
 }
 
-a {
+h5 { // 날짜 
+    @include font(black, normal, 500, 2rem);
+    line-height: normal;
+}
+
+a { // 링크
     @media all and (max-width: 1023px) {
         display: none;
     }
     display: initial;
-    @include font(gray, italic, 500, 2rem);
+    @include font(gray, italic, 300, 1.5rem);
     text-decoration: none;
+    word-spacing: 4px;
     &:hover {
         color:black;
     }
 }
 
-p {
-    @include font(#777, normal, 400, 2rem);
+p { // 부제목
+    @include font(#888, italic, 400, 1.5rem);
     @include media-text-align();
 }
 
 li {
-    @include font(black, normal, 400, 2rem);
+    @include font(black, normal, 400, 1.5rem);
     text-align: initial;
 }
 

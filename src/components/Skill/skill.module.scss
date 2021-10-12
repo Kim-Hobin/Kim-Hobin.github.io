@@ -20,8 +20,8 @@
             list-style-type: none;
             flex-flow: wrap;
                 li {
-                    width: 33.3333%;
-                    @include font(black, normal, 300, 2rem);
+                    width: 25%;
+                    @include font(black, normal, 300, 1.6rem);
                 }
             }
         }

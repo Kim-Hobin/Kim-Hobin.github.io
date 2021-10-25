@@ -11,26 +11,43 @@ export const resume = {
     intro: {
         subject: "About Me",
         content: "안녕하세요!! Front-end 개발자를 꿈꾸는 학생입니다. \
-        학창시절, 논문을 쓰고 학술대회에 참가하여 발표를 하여 운좋게 우수논문상을 받았습니다. \
-        특허출원도 해보았고, 새로 신설된 AI 부전공을 이수하는 등 많은 경험을 할 수 있었습니다. \
-        하지만 직접적으로 개발을 했던 경험이 적고 개발실력이 부족하다고 생각하여 \
-        현재 부족한 부분을 키우고자 백준 사이트와 알고리즘 해결 전략이라는 책을 통해 꾸준히 알고리즘 공부와 작은 프로젝트를 병행하고 있습니다. \
-        또한 현재 리엑트를 공부하여 기술 이력서를 개발하고 있으며 이후에는 스프링 프레임워크에 대해 공부할 계획입니다. \
-        저는 사람들과 어울리는 것을 좋아하고 취미로 배드민턴 레슨과 동호회를 하는 등 활동적인 사람이며\
-        배우는 것에 욕심이 많고 한번 붙잡으면 미친듯이 하는 편입니다.\
-        많이 배우고 성장할 수 있는 기회가 있었으면 좋겠습니다."
+        학창시절, 논문을 쓰고 학술대회에 참가하여 발표를 하여 운좋게 우수논문상을 받고 \
+        특허출원이나 경진대회, 새로 신설된 AI 부전공을 이수하는 등 다양한 경험을 했습니다. \
+        하지만 직접적으로 개발을 했던 경험이 적고 개발실력이 부족하다고 느껴서 \
+        졸업 후, 현재 부족한 부분을 키우고자 백준 사이트와 알고리즘 해결 전략이라는 책을 통해 꾸준히 알고리즘 공부와 작은 프로젝트를 병행하며 자기계발을 하고 있습니다. \
+        리엑트를 공부하여 기술 이력서를 개발했고, 현재 스프링 프레임워크에 대해 공부하고 있습니다. \
+        저는 사람들과 어울리는 것을 좋아하고 취미로 배드민턴 레슨과 동호회를 하는 등 활동적인 사람입니다. \
+        하루 빨리 선배님들 밑에서 많이 배우고 성장할 수 있는 기회가 있었으면 좋겠습니다."
+    },
+    experience: {
+        subject: "Experience",
+        contents: [
+            {
+                left_title: "2020.07 ~ 2020.08",
+                left_add: "",
+                right_title: "(주)잔다 인턴 근무",
+                right_subtitle: "동서대학교 2020학년도 하계 국내인턴십",
+                content: [
+                    { main: "하우스 매뉴얼 솔루션 개발", sub: [] },
+                ],
+                keywords: [],
+                folder: "",
+                images: [],
+                pdfs: [],
+            }
+        ]
     },
     skills: {
         subject: "Skills",
         contents: [
             {
-                title: "Front-end",
+                title: "Frontend",
                 content: [
-                    "HTML", "CSS", "javaScrpit", "React"
+                    "HTML", "CSS", "JavaScrpit", "React"
                 ],
             },
             {
-                title: "Back-end",
+                title: "Backend",
                 content: [
                     "C++", "PHP", "Python", "Node.js", "Django", "Spring"
                 ],
@@ -47,14 +64,14 @@ export const resume = {
         subject: "Projects",
         contents: [
             {
-                left_title: "2021.9 ~ 2021.9",
-                left_add: "https:/asdadasd.com",
+                left_title: "2021.09 ~ 2021.10",
+                left_add: "https://github.com/Kim-Hobin/Resume",
                 right_title: "기술 이력서",
-                right_subtitle: "Github Page 이력서",
+                right_subtitle: "React Based Github Pages Resume",
                 content: [
-                    { main: "웹 프론트엔드 프레임워크인 리엑트를 공부하며 실습으로 만든 이력서", sub: [] },
-                    { main: "전체를 Wrapper, Left, Right 3부분으로 컴포넌트를 나누어 재사용할 수 있도록 구현", sub: [] },
-                    { main: "동적인 프로필 버튼과 이미지 모달 구현", sub: ["asdfasfsadf", "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ", "ㅁㅁㄴㅇㄴㅁㅇㅁㅁㅁ"] },
+                    { main: "React 기반 깃허브 이력서", sub: [] },
+                    { main: "Wrapper, Left, Rgiht 구조로 컴포넌트를 나누어 구현", sub: [] },
+                    { main: "각 프로젝트 이미지의 모달 구현, PDF Viewer 구현", sub: [] },
                 ],
                 keywords: ["React", "HTML", "CSS", "JS"],
                 folder: "./resume",
@@ -62,33 +79,53 @@ export const resume = {
                 pdfs: []
             },
             {
-                left_title: "2021.07 ~ 2021.08",
-                left_add: "https:/asdadasd.com",
+                left_title: "2020.07 ~ 2020.08",
+                left_add: "https://github.com/Kim-Hobin/House-Mannual",
                 right_title: "하우스 매뉴얼",
                 right_subtitle: "숙박 예약 페이지 솔루션 프로젝트",
                 content: [
-                    { main: "고객이 숙박을 예약하면 URl을 통해 고객이 예약정보를 알 수 있도록 함", sub: [] },
+                    { main: "고객이 호텔을 예약하면 URL을 통해 아이템의 정보를 보여주도록 함", sub: [] },
                     { main: "html, css, javascript로 클라이언트, Django + MongoDB 서버 구현", sub: [] },
-                    { main: "기본적인 CRUD 및 반응형 웹앱으로 구현", sub: [] },
+                    {
+                        main: "기능 구현",
+                        sub: [
+                            "기본적인 CRUD 및 반응형 웹앱 구현",
+                            "사용자의 권한에 따라 뷰를 다르게 구성",
+                            "Slug 등록을 통해 원하는 URL 구성, 이미지 슬라이드 구현",
+                        ]
+                    },
                 ],
                 keywords: ["Django", "MongoDB", "HTML", "CSS", "JS"],
                 folder: "./house-manual",
-                images: ['1', '2', '3', '4', '5'],
+                images: ['1', '2', '3', '4',],
                 pdfs: []
             },
             {
                 left_title: "2020.03 ~ 2020.12",
-                left_add: "https:/asdadasd.com",
+                left_add: "https://github.com/Kim-Hobin/OMR-based-automatic-arragement-system",
                 right_title: "광학 음악 인식 기반 자동 편곡 시스템",
                 right_subtitle: "캡스톤디자인1, 2 교과목 연계 졸업프로젝트",
                 content: [
-                    { main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함", sub: [] },
-                    { main: "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음", sub: [] },
-                    { main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성", sub: [] },
-                    { main: "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함", sub: [] },
-                    { main: "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현", sub: [] },
-                    { main: "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함", sub: [] },
-                    { main: "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨", sub: [] },
+                    {
+                        main: "일반인도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 어플리케이션",
+                        sub: [
+                            "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음",
+                        ]
+                    },
+                    {
+                        main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성",
+                        sub: [
+                            "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현",
+                            "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함",
+                        ]
+                    },
+                    {
+                        main: "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨",
+                        sub: [
+                            "악보의 구성요소들이 가진 구조적 특성을 이용해 인식 모듈을 구현",
+                            "자동 편곡 모듈에 다층 퍼셉트론 구조의 신경망을 통해 멜로디 기반 화성을 생성"
+                        ]
+                    },
                 ],
                 keywords: ["C++", "JAVA", "Python", "Android", "OpenCV", "TensorFlow"],
                 folder: "./senior-project",
@@ -97,13 +134,13 @@ export const resume = {
             },
             {
                 left_title: "2019.09 ~ 2019.12",
-                left_add: "https:/asdadasd.com",
+                left_add: "https://github.com/Kim-Hobin/PC-auction",
                 right_title: "PC 견적 관리 웹사이트",
                 right_subtitle: "데이터베이스 설계 교과목 연계 프로젝트",
                 content: [
                     { main: "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트", sub: [] },
-                    { main: "로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공", sub: [] },
                     { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] },
+                    { main: "로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공", sub: [] },
                 ],
                 keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
                 folder: "./PC-auction",
@@ -112,14 +149,14 @@ export const resume = {
             },
             {
                 left_title: "2019.09 ~ 2019.12",
-                left_add: "",
+                left_add: "https://github.com/Kim-Hobin/Online-Book-Purchase-System",
                 right_title: "온라인 도서 구매 시스템",
                 right_subtitle: "데이터베이스 설계 교과목 연계 프로젝트",
                 content: [
                     { main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현", sub: [] },
-                    { main: "로그인/로그아웃, 회원가입, 마이페이지(신용카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공", sub: [] },
                     { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] },
-                    { main: "MySQL로 객체의 속성이나 관계에 대해 직접 설계", sub: [] },
+                    { main: "로그인/로그아웃, 회원가입, 마이페이지(신용카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공", sub: [] },
+                    { main: "MySQL의 테이블의 속성이나 관계에 대해 직접 설계", sub: [] },
                 ],
                 keywords: ["PHP", "MySQL", "HTML", "CSS", "JS"],
                 folder: "./book-manage",
@@ -128,14 +165,18 @@ export const resume = {
             },
             {
                 left_title: "2019.09 ~ 2019.12",
-                left_add: "https:/asdadasd.com",
+                left_add: "",
                 right_title: "플리마켓 통합 관리 시스템",
                 right_subtitle: "소프트웨어분석설계과목 교과목 연계 프로젝트",
                 content: [
-                    { main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, 다양한 문서를 작성 해본 프로젝트", sub: [] },
                     { main: "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템", sub: [] },
-                    { main: "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성", sub: [] },
-                    { main: "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음", sub: [] },
+                    {
+                        main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 프로젝트 정의서, 다양한 문서를 작성 해본 프로젝트",
+                        sub: [
+                            "프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등의 설계 문서 작성",
+                            "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음",
+                        ]
+                    },
                 ],
                 keywords: ["StarUML"],
                 folder: "./fleamarket",
@@ -144,14 +185,18 @@ export const resume = {
             },
             {
                 left_title: "2019.09 ~ 2019.12",
-                left_add: "",
+                left_add: "https://github.com/Kim-Hobin/tap-the-taxi-2",
                 right_title: "TAPC2",
                 right_subtitle: "소프트웨어 개발 실습4 교과목 연계 프로젝트",
                 content: [
-                    { main: "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발", sub: [] },
-                    { main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현", sub: [] },
-                    { main: "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현", sub: [] },
-                    { main: "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트", sub: [] },
+                    { main: "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션", sub: [] },
+                    {
+                        main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현",
+                        sub: [
+                            "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현",
+                            "기존 TapC의 FIreBase를 대체하여 웹 서버 연동",
+                        ]
+                    },
                 ],
                 keywords: ["Node.js", "MySQL", "JAVA", "JavaScrpit", "Andriod"],
                 folder: "./tapc2",
@@ -160,16 +205,16 @@ export const resume = {
             },
             {
                 left_title: "2018.03 ~ 2018.06",
-                left_add: "",
+                left_add: "https://github.com/Kim-Hobin/Online-badminton-Shopping-Mall",
                 right_title: "배드민턴 쇼핑몰",
                 right_subtitle: "소프트웨어개발실습2 교과목 연계 프로젝트",
                 content: [
                     { main: "배드민턴 관련 쇼핑몰 사이트", sub: [] },
-                    { main: "html + css + javascript을 기반으로 서버가 없는 정적 페이지", sub: [] },
+                    { main: "html + css + javascript을 기반으로 서버가 없는 정적 페이지로 이미지 슬라이드 구현", sub: [] },
                 ],
                 keywords: ["HTML", "CSS", "JS"],
                 folder: "./badmintorn-market",
-                images: ['1', '2'],
+                images: ['1', '2', '3', '4'],
                 pdfs: []
             },
         ],
@@ -206,7 +251,7 @@ export const resume = {
         contents: [
             {
                 left_title: "2020.12.17",
-                left_add: "",
+                left_add: "https://www.dongseo.ac.kr/kr/index.php?pCode=MN2000192&pg=10&mode=view&idx=83639",
                 right_title: "2020년도 온택트기반 동서인 FAIR - 최우수상",
                 right_subtitle: "", content: [], keywords: [], folder: "", images: [], pdfs: []
             },
@@ -218,13 +263,13 @@ export const resume = {
             },
             {
                 left_title: "2020.08.31",
-                left_add: "",
+                left_add: "https://www.dongseo.ac.kr/kr/index.php?pCode=MN2000192&pg=15&mode=view&idx=82307",
                 right_title: "동서인 AI해커톤 경진대회 - 장려상",
                 right_subtitle: "", content: [], keywords: [], folder: "", images: [], pdfs: []
             },
             {
                 left_title: "2020.06.08",
-                left_add: "",
+                left_add: "https://uni.dongseo.ac.kr/sw/index.php?pCode=MN1000014&pg=3&mode=view&idx=442",
                 right_title: "2020년도 동서 AI·SW 아이디어 경진대회 - 장려상",
                 right_subtitle: "", content: [], keywords: [], folder: "", images: [], pdfs: []
             },
@@ -236,7 +281,7 @@ export const resume = {
         contents: [
             {
                 left_title: "2020.01.18",
-                left_add: "",
+                left_add: "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10572152",
                 right_title: "Journal of The Korean Instiute of Inteligent System",
                 right_subtitle: "Optical Music Recognition-based Auto Arrangement System",
                 content: [
@@ -323,36 +368,36 @@ export const resume = {
         ],
     },
     certificates: {
-        subject: "certificate",
+        // subject: "Certificate",
         contents: [
-            {
-                left_title: "2020.07.09",
-                left_add: "",
-                right_title: "정보처리기사",
-                right_subtitle: "한국산업인력공단",
-                content: [], keywords: [], folder: "", images: [], pdfs: []
-            },
-            {
-                left_title: "2020.07.09",
-                left_add: "",
-                right_title: "리눅스 마스터 2급",
-                right_subtitle: "대한상공회의소 자격팡가사업단",
-                content: [], keywords: [], folder: "", images: [], pdfs: []
-            },
-            {
-                left_title: "2020.07.09",
-                left_add: "",
-                right_title: "워드프로세스 1급",
-                right_subtitle: "대한상공회의소 자격팡가사업단",
-                content: [], keywords: [], folder: "", images: [], pdfs: []
-            },
-            {
-                left_title: "2020.07.09",
-                left_add: "",
-                right_title: "컴퓨터활용능력 1급",
-                right_subtitle: "대한상공회의소 자격팡가사업단",
-                content: [], keywords: [], folder: "", images: [], pdfs: []
-            },
+            // {
+            //     left_title: "2020.07.09",
+            //     left_add: "",
+            //     right_title: "정보처리기사",
+            //     right_subtitle: "한국산업인력공단",
+            //     content: [], keywords: [], folder: "", images: [], pdfs: []
+            // },
+            // {
+            //     left_title: "2020.07.09",
+            //     left_add: "",
+            //     right_title: "리눅스 마스터 2급",
+            //     right_subtitle: "대한상공회의소 자격팡가사업단",
+            //     content: [], keywords: [], folder: "", images: [], pdfs: []
+            // },
+            // {
+            //     left_title: "2020.07.09",
+            //     left_add: "",
+            //     right_title: "워드프로세스 1급",
+            //     right_subtitle: "대한상공회의소 자격팡가사업단",
+            //     content: [], keywords: [], folder: "", images: [], pdfs: []
+            // },
+            // {
+            //     left_title: "2020.07.09",
+            //     left_add: "",
+            //     right_title: "컴퓨터활용능력 1급",
+            //     right_subtitle: "대한상공회의소 자격팡가사업단",
+            //     content: [], keywords: [], folder: "", images: [], pdfs: []
+            // },
         ],
     },
 };

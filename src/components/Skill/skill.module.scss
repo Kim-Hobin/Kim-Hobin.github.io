@@ -15,10 +15,10 @@
         }
         div {
             ul {
-            display: flex;
-            padding-left: 0px;
-            list-style-type: none;
-            flex-flow: wrap;
+                display: flex;
+                padding-left: 0px;
+                list-style-type: none;
+                flex-flow: wrap;
                 li {
                     width: 25%;
                     @include font(black, normal, 300, 1.6rem);

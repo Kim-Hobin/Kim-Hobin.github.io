@@ -1,29 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 
-@mixin font($color, $style, $weight, $size) {
-    color: $color;
-    font: {
-        display: swap;
-        family: 'IBM Plex Sans Arabic', 'IBM Plex Sans KR', sans-serif;
-        style: $style;
-        weight: $weight;
-        size: $size;
-    }
-}
-
-@mixin media-text-align() {
-    @media all and (max-width: 1023px) {
-        text-align: center;
-    }
-    text-align: initial;
-}
+@import './mixins.module.scss';
 
 * {
     box-sizing: border-box;
     margin: 0px;
     line-height: 2;
-    word-spacing: 2px;
+    word-spacing: 3px;
 }
 
 html {
@@ -41,12 +23,12 @@ h1{ // 이름
 h2 { // subject
     margin-top: 20px;
     margin-left: 0.2rem;
-    @include font(#444, normal, 500, 3rem);
+    @include font(#444, normal, 300, 3rem);
     @include media-text-align();
 }
 
 h3 { // 직업
-    @include font(#666, normal, 300, 2rem);
+    @include font(#666, normal, 200, 2rem);
     line-height: normal;
 }
 
@@ -60,7 +42,7 @@ a { // 링크
         display: none;
     }
     display: initial;
-    @include font(gray, italic, 300, 1.5rem);
+    @include font(#888, italic, 300, 1.5rem);
     text-decoration: none;
     word-spacing: 4px;
     &:hover {
@@ -69,12 +51,13 @@ a { // 링크
 }
 
 p { // 부제목
-    @include font(#888, italic, 400, 1.5rem);
+    @include font(#888, normal, 300, 1.5rem);
     @include media-text-align();
+    margin-top: -5px;
 }
 
 li {
-    @include font(black, normal, 400, 1.5rem);
+    @include font(#444, normal, 400, 1.5rem);
     text-align: initial;
 }
 

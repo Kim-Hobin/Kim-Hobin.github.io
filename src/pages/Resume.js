@@ -18,6 +18,7 @@ class Resume extends Component {
                 <Profile data={this.state.profiles}></Profile>
                 <Intro data={this.state.intro}></Intro>
                 <Skill data={this.state.skills}></Skill>
+                <Main data={this.state.experience}></Main>
                 <Main data={this.state.projects}></Main>
                 <Main data={this.state.reserchs}></Main>
                 <Main data={this.state.educations}></Main>

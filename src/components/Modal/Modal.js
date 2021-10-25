@@ -13,7 +13,6 @@ class Modal extends Component {
             index: index
         })
     }
-
     render() {
         const folder = this.props.folder;
         const image = this.props.images[this.state.index]; // Gallary Image

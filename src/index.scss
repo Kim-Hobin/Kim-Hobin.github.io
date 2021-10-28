@@ -42,7 +42,7 @@ a { // 링크
         display: none;
     }
     display: initial;
-    @include font(#888, italic, 300, 1.5rem);
+    @include font(#888, normal, 300, 1.5rem);
     text-decoration: none;
     word-spacing: 4px;
     &:hover {

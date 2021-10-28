@@ -4,6 +4,8 @@ import Intro from '../components/Intro/Intro';
 import Main from '../components/Main/Wrapper';
 import Skill from '../components/Skill/Wrapper';
 import Footer from '../components/Footer/Footer';
+import GoToTop from '../components/Scroll/GoToTop';
+import FadeIn from '../components/Scroll/FadeIn';
 import { resume } from '../resume';
 import styles from '../styles.module.scss';
 
@@ -15,8 +17,10 @@ class Resume extends Component {
     render() {
         return (
             <div className={styles.resume}>
+                <GoToTop></GoToTop>
                 <Profile data={this.state.profiles}></Profile>
                 <Intro data={this.state.intro}></Intro>
+                <FadeIn></FadeIn>
                 <Skill data={this.state.skills}></Skill>
                 <Main data={this.state.experience}></Main>
                 <Main data={this.state.projects}></Main>
@@ -29,4 +33,6 @@ class Resume extends Component {
         );
     }
 }
+
+
 export default Resume;
